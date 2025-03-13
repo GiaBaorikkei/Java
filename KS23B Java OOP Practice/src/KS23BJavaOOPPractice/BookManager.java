@@ -75,20 +75,33 @@ public class BookManager {
             System.out.print("Chọn chức năng: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine();
 
             switch (choice) {
-                case 1 -> showBooks();
-                case 2 -> addBook();
-                case 3 -> calculateProfit();
-                case 4 -> sortBooksByProfit();
-                case 5 -> searchByAuthor();
-                case 6 -> searchByPriceRange();
-                case 7 -> {
+                case 1:
+                    showBooks();
+                    break;
+                case 2:
+                    addBook();
+                    break;
+                case 3:
+                    calculateProfit();
+                    break;
+                case 4:
+                    sortBooksByProfit();
+                    break;
+                case 5:
+                    searchByAuthor();
+                    break;
+                case 6:
+                    searchByPriceRange();
+                    break;
+                case 7:
                     System.out.println("Thoát chương trình!");
                     return;
-                }
-                default -> System.out.println("Lựa chọn không hợp lệ!");
+                default:
+                    System.out.println("Lựa chọn không hợp lệ!");
+                    break;
             }
         }
     }
