@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         List<Product> products = Arrays.asList(
-                new Product("Laptop", 1200),
-                new Product("Chuột", 25),
-                new Product("Bàn phím", 50),
-                new Product("Tai nghe", 80),
-                new Product("Màn hình", 300),
-                new Product("USB", 20)
+                new Product("Áo phông", 1200),
+                new Product("Quần ngắn", 25),
+                new Product("Áo sơ mi", 50),
+                new Product("Dép lê", 80),
+                new Product("Giày Nike", 300),
+                new Product("Áo giữ nhiệt", 20)
         );
 
         ProductProcessor processor = new ProductProcessorImpl();
