@@ -28,7 +28,7 @@ public class Main {
         }
 
         double totalValue = processor.calculateTotalValue(products);
-        System.out.println("Tổng giá trị sản phẩm: $" + totalValue);
+        System.out.println("Tổng giá trị sản phẩm: " + totalValue);
 
         ProductProcessor.printProductList(products);
     }
